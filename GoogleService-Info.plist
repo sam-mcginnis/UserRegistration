@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>157883891398-ta2duk7088e5uulp065rf07r7fcc1bho.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.157883891398-ta2duk7088e5uulp065rf07r7fcc1bho</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCoTv07FoubQk6Ym42aitGxiIOLlTjomVk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>157883891398</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>GozyMobileSolutions.UserRegistration</string>
+	<key>PROJECT_ID</key>
+	<string>userregistration-eda3a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>userregistration-eda3a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:157883891398:ios:74d671fa4bb001d20d61c7</string>
+	<key>DATABASE_URL</key>
+	<string>https://userregistration-eda3a.firebaseio.com</string>
+</dict>
+</plist>

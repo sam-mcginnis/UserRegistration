@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RuffSpotsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hQj-eQ-exe">
+                                <rect key="frame" x="112.5" y="50" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="l98-ea-9nb"/>
+                                    <constraint firstAttribute="width" constant="150" id="m9C-o1-VeW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Create account" translatesAutoresizingMaskIntoConstraints="NO" id="HrV-pc-TVJ">
+                                <rect key="frame" x="87.5" y="210" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HDl-4p-uwf"/>
+                                    <constraint firstAttribute="height" constant="20" id="swi-qc-6Dj"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yGb-3h-6xW">
+                                <rect key="frame" x="87.5" y="240" width="200" height="200"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter your username" textAlignment="natural" minimumFontSize="17" background="Username Field" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-c4-SmF">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" background="Email Field" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-X4-Obc">
+                                        <rect key="frame" x="0.0" y="52" width="200" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" background="Password Field" translatesAutoresizingMaskIntoConstraints="NO" id="mhx-gF-0HI">
+                                        <rect key="frame" x="0.0" y="104" width="200" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4b-9U-vER">
+                                        <rect key="frame" x="0.0" y="156" width="200" height="44"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="F2y-wN-Rg5"/>
+                                    <constraint firstAttribute="height" constant="200" id="Ggj-hV-KZt"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sau-IL-i5a">
+                                <rect key="frame" x="87.5" y="440" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Say-An-KhM"/>
+                                    <constraint firstAttribute="width" constant="200" id="iar-i7-5UZ"/>
+                                </constraints>
+                                <state key="normal" image="Register" backgroundImage="Register Button"/>
+                                <connections>
+                                    <action selector="RigesterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNH-qU-I2f"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="or use Social media" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-c0-HB2">
+                                <rect key="frame" x="137.5" y="485" width="100" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="6uF-eH-YQ0"/>
+                                    <constraint firstAttribute="width" constant="100" id="v22-Az-qjZ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="zgj-a8-9iv">
+                                <rect key="frame" x="50" y="515" width="275" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXt-xZ-KjT" customClass="GIDSignInButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-hD-YvY">
+                                        <rect key="frame" x="144" y="0.0" width="131" height="40"/>
+                                        <state key="normal" image="Sign up with Facebook"/>
+                                        <connections>
+                                            <action selector="FBtapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxu-nf-ZSx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="LFQ-UU-Z5v"/>
+                                    <constraint firstAttribute="height" constant="40" id="nI2-6s-vxM"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsG-u8-hoj">
+                                <rect key="frame" x="112.5" y="565" width="150" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="iwx-3w-gGp"/>
+                                    <constraint firstAttribute="height" constant="15" id="y6M-Zw-fOu"/>
+                                </constraints>
+                                <state key="normal" image="Already have an Account? Log in"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zgj-a8-9iv" firstAttribute="top" secondItem="ceI-c0-HB2" secondAttribute="bottom" constant="5" id="4Rf-oI-maA"/>
+                            <constraint firstItem="Sau-IL-i5a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6S4-dc-1qM"/>
+                            <constraint firstItem="hQj-eQ-exe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fqe-lk-0Dx"/>
+                            <constraint firstItem="zgj-a8-9iv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hx9-Ht-oLJ"/>
+                            <constraint firstItem="UsG-u8-hoj" firstAttribute="top" secondItem="zgj-a8-9iv" secondAttribute="bottom" constant="10" id="Iq5-Ze-Px8"/>
+                            <constraint firstItem="yGb-3h-6xW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPe-mF-YeW"/>
+                            <constraint firstItem="zgj-a8-9iv" firstAttribute="top" secondItem="ceI-c0-HB2" secondAttribute="bottom" constant="5" id="Oez-af-Pxd"/>
+                            <constraint firstItem="hQj-eQ-exe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="RAh-LO-1oP"/>
+                            <constraint firstItem="HrV-pc-TVJ" firstAttribute="top" secondItem="hQj-eQ-exe" secondAttribute="bottom" constant="10" id="SHV-iQ-p34"/>
+                            <constraint firstItem="Sau-IL-i5a" firstAttribute="top" secondItem="yGb-3h-6xW" secondAttribute="bottom" id="WHs-rq-Hfy"/>
+                            <constraint firstItem="ceI-c0-HB2" firstAttribute="top" secondItem="Sau-IL-i5a" secondAttribute="bottom" constant="10" id="by9-c7-zp9"/>
+                            <constraint firstItem="UsG-u8-hoj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mQ6-vP-tN4"/>
+                            <constraint firstItem="ceI-c0-HB2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKu-oX-CTL"/>
+                            <constraint firstItem="HrV-pc-TVJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="qZu-sR-Q64"/>
+                            <constraint firstItem="yGb-3h-6xW" firstAttribute="top" secondItem="HrV-pc-TVJ" secondAttribute="bottom" constant="10" id="s7Z-TS-Bvj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="EmailTF" destination="DVZ-X4-Obc" id="Y2t-eF-QJo"/>
+                        <outlet property="FacebookBtn" destination="uWJ-hD-YvY" id="ZB3-0E-SMT"/>
+                        <outlet property="GoogleBtn" destination="zXt-xZ-KjT" id="xwE-7M-u6b"/>
+                        <outlet property="PasswordTF" destination="mhx-gF-0HI" id="K62-Ie-CKO"/>
+                        <outlet property="RegisterBtn" destination="Sau-IL-i5a" id="7LM-hZ-CZO"/>
+                        <outlet property="UsernameTF" destination="d0r-c4-SmF" id="sKG-p2-s7B"/>
+                        <outlet property="errorLabel" destination="H4b-9U-vER" id="XbZ-pi-6wo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="115.14084507042254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Already have an Account? Log in" width="204" height="17"/>
+        <image name="Create account" width="150" height="28"/>
+        <image name="Email Field" width="280" height="56"/>
+        <image name="Password Field" width="280" height="56"/>
+        <image name="Register" width="82" height="28"/>
+        <image name="Register Button" width="280" height="46"/>
+        <image name="RuffSpotsLogo" width="240" height="240"/>
+        <image name="Sign up with Facebook" width="150" height="30"/>
+        <image name="Username Field" width="280" height="56"/>
+        <image name="or use Social media" width="128" height="18"/>
+    </resources>
+</document>
